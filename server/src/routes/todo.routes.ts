@@ -11,6 +11,6 @@ const todoController = new TodoController(todoInteractor);
 
 router.get("/", todoController.onGetTodos.bind(todoController));
 router.get("/:id", todoController.onGetTodo.bind(todoController));
-router.post("/", todoController.onCreateTodo.bind(todoController))
+router.post("/", todoController.onCreateTodo.bind(todoController));
 
 export default router;
